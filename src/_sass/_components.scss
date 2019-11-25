@@ -1,0 +1,38 @@
+.main {
+    &-block {
+        height: 100vh;
+        width: 100%;
+        background-color: $light-green;
+    }
+
+    &-content {
+        margin-top: 35vh;
+        font-size: 2.5rem;
+        font-weight: 500;
+        border-left: .5rem solid $dark-green;
+
+        @include responsive(lg){
+            font-size: 3.2rem;
+        }
+
+        & span {
+            color: $dark-green;
+            font-weight: bold;
+        }
+    }
+}
+
+.secondary {
+
+    &-content {
+        padding-top: 10vh;
+        padding-bottom: 50vh;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+.footer {
+    font-size: 1.6rem;
+    font-weight: 500;
+}

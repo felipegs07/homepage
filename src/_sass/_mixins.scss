@@ -1,0 +1,14 @@
+@mixin responsive($breakepoint) {
+    @if $breakepoint == sm {
+        @media only screen and (min-width: 576px) { @content };
+    }
+    @if $breakepoint == md {
+         @media only screen and (min-width: 768px) { @content };
+     }
+     @if $breakepoint == lg {
+         @media only screen and (min-width: 992px) { @content };
+     }
+     @if $breakepoint == xl {
+         @media only screen and (min-width: 1200px) { @content };
+     }
+ }
